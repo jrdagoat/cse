@@ -58,12 +58,7 @@ print_age("Junious",14)
 def algebra_hw (x):
     return x**3 + 4*x**2 + 7 * x -4
 
-print algebra_hw(3)
-print algebra_hw(4)
-print algebra_hw(5)
-print algebra_hw(6)
-print algebra_hw(7)
-print algebra_hw(8)
+print(algebra_hw(3))
 
 # if statements
 
@@ -71,7 +66,7 @@ print algebra_hw(8)
 def grade_calc (percentage):
     if percentage >=90:
         return "A"
-    elif percentage >= 80: and percentage < 90: # else if
+    elif percentage >= 80 and percentage < 90: # else if
       return "B"
     elif percentage >= 70:
         return "C"
@@ -82,3 +77,24 @@ def grade_calc (percentage):
 
 print(grade_calc(100))
 
+
+def happy_bday(name) :
+    print("Happy Birthday to you")
+    print("Happy Birthday to you")
+    print("Happy Birthday dear"+ name)
+    print("Happy Birthday to you")
+
+happy_bday("Junious")
+
+# Loops
+
+for num in range(10):
+    print (num + 1)
+a = 1
+while a < 10:
+    print(a)
+    a += 1
+
+# Random Numbers
+import random  # This should be on line 1
+print(random.randint(0, 1000))
